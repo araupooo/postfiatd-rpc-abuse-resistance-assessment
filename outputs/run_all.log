@@ -1,0 +1,74 @@
+=== postfiatd RPC abuse-resistance assessment ===
+run started: 2026-11-24T19:19:10Z
+pinned commit: 0085a1ff885d6a446369cf73a4430f75af22be55
+simulated: all load results come from scripts/simulator.py; no live node was load-tested
+scenario S0-baseline: total=420 served=420 rejected=0 success=100.00% first_drop_ms=None
+scenario S1-burst-single-ip: total=5003 served=1297 rejected=3706 success=25.92% first_drop_ms=2167
+scenario S10-pathfind-cap: total=7 served=4 rejected=3 success=57.14% first_drop_ms=None
+scenario S2-slow-ws-clients: total=3 served=3 rejected=0 success=100.00% first_drop_ms=None
+scenario S3-oversized-payloads: total=9 served=4 rejected=5 success=44.44% first_drop_ms=None
+scenario S4-expensive-repeat: total=901 served=407 rejected=494 success=45.17% first_drop_ms=1011
+scenario S5-admin-bypass: total=598 served=314 rejected=284 success=52.51% first_drop_ms=999
+scenario S6-job-queue-saturation: total=610 served=500 rejected=110 success=81.97% first_drop_ms=5000
+scenario S7-multi-ip-isolation: total=5087 served=1381 rejected=3706 success=27.15% first_drop_ms=2167
+scenario S8-page-limit-clamp: total=9 served=8 rejected=1 success=88.89% first_drop_ms=None
+scenario S9-connection-limit: total=7 served=3 rejected=4 success=42.86% first_drop_ms=None
+controls measured: 12 (2 not exercised)
+matrix: 11 scenarios ranked
+  CRITICAL S5-admin-bypass
+  HIGH S1-burst-single-ip
+  HIGH S7-multi-ip-isolation
+  MEDIUM S2-slow-ws-clients
+  MEDIUM S4-expensive-repeat
+  MEDIUM S6-job-queue-saturation
+  LOW S10-pathfind-cap
+  LOW S3-oversized-payloads
+  LOW S8-page-limit-clamp
+  LOW S9-connection-limit
+  INFO S0-baseline
+manifest written: 19 inputs, 39 outputs
+SHA256SUMS written: 40 entries
+outputs/S0-baseline.csv: OK
+outputs/S0-baseline.json: OK
+outputs/S0-baseline.log: OK
+outputs/S1-burst-single-ip.csv: OK
+outputs/S1-burst-single-ip.json: OK
+outputs/S1-burst-single-ip.log: OK
+outputs/S10-pathfind-cap.csv: OK
+outputs/S10-pathfind-cap.json: OK
+outputs/S10-pathfind-cap.log: OK
+outputs/S2-slow-ws-clients.csv: OK
+outputs/S2-slow-ws-clients.json: OK
+outputs/S2-slow-ws-clients.log: OK
+outputs/S3-oversized-payloads.csv: OK
+outputs/S3-oversized-payloads.json: OK
+outputs/S3-oversized-payloads.log: OK
+outputs/S4-expensive-repeat.csv: OK
+outputs/S4-expensive-repeat.json: OK
+outputs/S4-expensive-repeat.log: OK
+outputs/S5-admin-bypass.csv: OK
+outputs/S5-admin-bypass.json: OK
+outputs/S5-admin-bypass.log: OK
+outputs/S6-job-queue-saturation.csv: OK
+outputs/S6-job-queue-saturation.json: OK
+outputs/S6-job-queue-saturation.log: OK
+outputs/S7-multi-ip-isolation.csv: OK
+outputs/S7-multi-ip-isolation.json: OK
+outputs/S7-multi-ip-isolation.log: OK
+outputs/S8-page-limit-clamp.csv: OK
+outputs/S8-page-limit-clamp.json: OK
+outputs/S8-page-limit-clamp.log: OK
+outputs/S9-connection-limit.csv: OK
+outputs/S9-connection-limit.json: OK
+outputs/S9-connection-limit.log: OK
+outputs/control-effectiveness.csv: OK
+outputs/control-effectiveness.json: OK
+outputs/control-effectiveness.log: OK
+outputs/matrix.csv: OK
+outputs/matrix.log: OK
+outputs/matrix.md: OK
+outputs/run-manifest.json: OK
+--- determinism check (second run vs first run) ---
+DETERMINISM OK: second run byte-identical
+=== run complete ===
+outputs: 41 files

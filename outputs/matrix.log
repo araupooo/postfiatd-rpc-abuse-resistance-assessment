@@ -1,0 +1,9 @@
+matrix build
+script_file: scripts/build_matrix.py
+script_sha256: 2053bff02664894cd71cf20ecfb72309f214bc9078b0e0c6011d4de32bf0a93d
+scenarios: 11
+severity_counts: {"CRITICAL": 1, "HIGH": 2, "INFO": 1, "LOW": 4, "MEDIUM": 3}
+csv_file: outputs/matrix.csv
+csv_sha256: 989895841f7f369a5feb318fc983c78e677facfcab252e7fd4e8d17f6cbcf5cb
+md_file: outputs/matrix.md
+md_sha256: c8acc03cf6b43fc84c0bd10e62706de3612fb8c0ec727ad35327b2edc18433d4

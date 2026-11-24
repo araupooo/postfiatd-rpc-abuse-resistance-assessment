@@ -1,0 +1,110 @@
+[
+  {
+    "control": "C01_port_limit",
+    "effectiveness": "100% of excess connections refused (2/2)",
+    "gap": "Default is unlimited (Port.cpp:265): the control only exists when an operator sets `limit` in the port section. The example config (cfg/postfiatd-example.cfg:1443-1478) sets no limit on any port.",
+    "measured": "2 of 2 excess connections refused at limit 3; 3 of 3 within-limit connections served",
+    "name": "Per-port connection limit",
+    "scenarios": "S9-connection-limit",
+    "source": "src/libxrpl/server/Port.cpp:265-283; src/xrpld/rpc/detail/ServerHandler.cpp:175-190"
+  },
+  {
+    "control": "C02_max_request_size",
+    "effectiveness": "100% of oversize requests blocked (5/5); boundary exact at 1,000,000 bytes",
+    "gap": "None measured. The 1 MB envelope bounds batch amplification only indirectly (see C12).",
+    "measured": "5 oversize requests rejected (3x HTTP 400, 1x WS jsonInvalid + session close, 1x follow-on rejected_client_gone); 999,999-byte and 1,000,000-byte requests served; 0 oversize requests served",
+    "name": "Maximum request size 1,000,000 bytes",
+    "scenarios": "S3-oversized-payloads",
+    "source": "src/xrpld/rpc/detail/Tuning.h:66; src/xrpld/rpc/detail/ServerHandler.cpp:343,627"
+  },
+  {
+    "control": "C03_role_gate",
+    "effectiveness": "100% of unauthorized admin attempts rejected (1/1); unlimited-role bypass works exactly as coded",
+    "gap": "The unlimited-role bypass is by design, but it means a compromised admin credential or a misclassified IDENTIFIED endpoint faces NO resource control at all (see decision memo).",
+    "measured": "1 of 1 admin-only attempts from PUBLIC rejected (rejected_no_permission); same method from ADMIN served; ADMIN and IDENTIFIED roles bypass resource limits (S5: admin served 298/298 heavy requests, 0 rejected)",
+    "name": "Role gate: admin-only handlers and FORBID role",
+    "scenarios": "S8-page-limit-clamp (admin-only method), S5-admin-bypass (unlimited roles)",
+    "source": "src/xrpld/rpc/detail/Role.cpp:125-128; src/xrpld/rpc/detail/RPCHandler.cpp:156-157; src/xrpld/rpc/detail/ServerHandler.cpp:754-768"
+  },
+  {
+    "control": "C04_resource_balance",
+    "effectiveness": "Drop engaged in every abusive run; benign traffic isolated (S7: 100% benign success during flood); but 1297 requests (25.9%% of the flood) were served before the first drop in S1",
+    "gap": "Charge rate, not request count, is the throttle: a sustained 1.35 medium-burden requests/s from one IP already exceeds the 541 charge/s drop equilibrium, so the control also throttles legitimate sustained use from a single IP. Post-drop the endpoint serves a trickle (~27/s) rather than staying closed, because the balance decays below the threshold between requests.",
+    "measured": "S1 first drop at 2167 ms; 1297 served before the flood was throttled; post-drop trickle 27 served/s over the remaining 7.83 s. S4 heavy (charge 3000) dropped after 16 served (first drop 1011 ms); medium (400) after 90 served; light (20) never dropped in 30 s (301/301 served). S7 benign IPs served 21/21 each during the flood. Warnings issued: 7 across all scenarios.",
+    "name": "Per-endpoint resource balance, warn 5000 / drop 25000, 32 s decay",
+    "scenarios": "S1-burst-single-ip, S4-expensive-repeat, S5-admin-bypass, S6-job-queue-saturation, S7-multi-ip-isolation",
+    "source": "include/xrpl/resource/detail/Tuning.h:31-44; include/xrpl/resource/detail/Logic.h:387-398,452-480,508-525; src/libxrpl/resource/Fees.cpp:33-44; src/xrpld/rpc/detail/ServerHandler.cpp:737-746,429-435"
+  },
+  {
+    "control": "C05_job_queue",
+    "effectiveness": "100% of requests above the 500 concurrent-job cap rejected (100/100); the cap held exactly at 500",
+    "gap": "The cap is a concurrency cap, not a rate cap: 500 concurrent heavy jobs is a large amount of work to admit at once, and the resource-balance charge only lands at job completion, so a burst passes the balance check before any charge is applied.",
+    "measured": "Burst of 600 simultaneous heavy requests: 500 served, 100 rejected rpcTOO_BUSY at t=0 ms; follow-on probe 5 s later: 10/10 rejected 503 (resource balance still above drop threshold, not the job queue)",
+    "name": "Client job-queue cap, maxJobQueueClients 500",
+    "scenarios": "S6-job-queue-saturation",
+    "source": "src/xrpld/rpc/detail/Tuning.h:64; src/xrpld/rpc/detail/RPCHandler.cpp:132-140"
+  },
+  {
+    "control": "C06_pathfind_caps",
+    "effectiveness": "100% of pathfinds above the 2-in-progress cap rejected (3/3); cap released exactly when jobs completed",
+    "gap": "maxPathfindJobCount 50 was not exercised (no scenario queues 50+ client jobs while pathfinding). The cap silently skips starting a pathfind; the exact RPC error surface for a skipped pathfind is UNMEASURED.",
+    "measured": "First burst of 5 path_find: 2 served, 3 rejected_pathfind_cap at t=0 ms; second burst of 2 after the first two completed (t=200 ms): 2 served, 0 rejected",
+    "name": "Pathfind concurrency caps: 2 in progress, 50 queued jobs",
+    "scenarios": "S10-pathfind-cap",
+    "source": "src/xrpld/rpc/detail/Tuning.h:62-63; src/xrpld/rpc/detail/LegacyPathFind.cpp:38-48"
+  },
+  {
+    "control": "C07_page_limits",
+    "effectiveness": "100% of over-range public limits clamped (5/5); 0 unclamped public over-range responses",
+    "gap": "Unlimited roles bypass clamping entirely (readLimitField leaves the value untouched for ADMIN/IDENTIFIED), so an admin client can request unbounded pages.",
+    "measured": "5 of 5 over-range public limits clamped (10000->400, 5->10, 0->10, 500->100, 1000->400); 1 in-range public limit served as asked (400); 1 admin limit of 10000 served unclamped",
+    "name": "Per-method page limits (LimitRange clamp)",
+    "scenarios": "S8-page-limit-clamp",
+    "source": "src/xrpld/rpc/detail/Tuning.h:37-58; src/xrpld/rpc/detail/RPCHelpers.cpp:701-717"
+  },
+  {
+    "control": "C08_ws_send_queue",
+    "effectiveness": "100% of slow clients closed (2/2) once the queue exceeded 100; fast client unaffected",
+    "gap": "A slow client holds its connection and up to 101 queued messages for 11-20 s before the control engages; the queue limit is per-connection, so many slow connections each hold 100 messages.",
+    "measured": "Slow client (drain 1/s vs 10 pushes/s): closed at 11200 ms with queue depth 101. Mid client (drain 5/s): closed at 20000 ms, queue depth 101. Fast client (drain 20/s): never closed in 30 s.",
+    "name": "WebSocket send-queue limit, default 100",
+    "scenarios": "S2-slow-ws-clients",
+    "source": "src/libxrpl/server/Port.cpp:284-308; include/xrpl/server/detail/BaseWSPeer.h:236-246"
+  },
+  {
+    "control": "C09_load_monitor",
+    "effectiveness": "Monitor never fired: modelled service times (max 250 ms) sit far below the 2000/5000 ms targets, so the monitor is a lagging indicator, not a first-line abuse control",
+    "gap": "The monitor watches latency, not queue depth or charge rate; by the time average latency exceeds 2000 ms the resource-balance control has already dropped the endpoint. Its value as an abuse control is UNMEASURED on a live node.",
+    "measured": "Worst average latency across all scenarios: 250.00 ms; worst peak: 250 ms; is_overloaded fired in 0 of 11 scenarios",
+    "name": "LoadMonitor latency targets, jtCLIENT avg 2000 ms / peak 5000 ms",
+    "scenarios": "all S0-S10",
+    "source": "src/xrpld/core/JobTypes.h:86-92; src/xrpld/core/detail/LoadMonitor.cpp:153-172; src/xrpld/core/JobTypeData.h:66"
+  },
+  {
+    "control": "C10_validated_ledger_age",
+    "effectiveness": "UNMEASURED",
+    "gap": "Code-verified only: handlers refuse (or mark stale) when the validated ledger is older than 2 minutes. Under load that delays validation, this gate can turn a consensus slowdown into RPC errors for otherwise cheap queries.",
+    "measured": "NOT EXERCISED: no scenario models ledger age, so the gate's rejection behaviour is UNMEASURED in this pack",
+    "name": "Validated-ledger freshness gate, maxValidatedLedgerAge 2 min",
+    "scenarios": "none",
+    "source": "src/xrpld/rpc/detail/Tuning.h:65; src/xrpld/rpc/detail/RPCHelpers.cpp:352,1061; src/xrpld/rpc/detail/Handler.h:109"
+  },
+  {
+    "control": "C11_warning_drop_charges",
+    "effectiveness": "Warning fires before the drop in every abusive run that crossed 5000 (S1, S4, S5, S6, S7)",
+    "gap": "The warning is a charge, not an alert: nothing in the pinned code surfaces it to the operator except a journal log line. An operator watching only RPC responses sees the 503, not the warning that preceded it.",
+    "measured": "7 warning-threshold crossings recorded across the abusive scenarios; each charged feeWarning 4000 once per episode (simulator logs: outputs/S1-burst-single-ip.json, outputs/S4-expensive-repeat.json, outputs/S5-admin-bypass.json, outputs/S6-job-queue-saturation.json, outputs/S7-multi-ip-isolation.json, warnings arrays)",
+    "name": "Warning (4000) and drop (6000) charges",
+    "scenarios": "S1, S4, S5, S6, S7",
+    "source": "src/libxrpl/resource/Fees.cpp:43-44; include/xrpl/resource/detail/Logic.h:492-495"
+  },
+  {
+    "control": "C12_batch_amplification",
+    "effectiveness": "UNMEASURED (harness); code-level mitigation is per-sub-request charging",
+    "gap": "A batch of many cheap sub-requests passes the envelope check once and then consumes handler work sub-request by sub-request; the balance check engages only after enough sub-requests have been charged. Batch amplification depth on a live node is UNMEASURED.",
+    "measured": "NOT EXERCISED in the harness: the simulator models single requests only. Code-verified: one HTTP request may carry an arbitrarily large batch bounded only by the 1,000,000-byte envelope (C02); each sub-request is charged and balance-checked individually.",
+    "name": "Batch request handling (no explicit batch-count cap)",
+    "scenarios": "none",
+    "source": "src/xrpld/rpc/detail/ServerHandler.cpp:640-655 (size = params array length, no cap); per-sub-request role/resource check inside the loop at :727-746 and charge at :922"
+  }
+]

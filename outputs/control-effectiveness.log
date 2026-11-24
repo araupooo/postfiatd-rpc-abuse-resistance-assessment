@@ -1,0 +1,20 @@
+control-effectiveness measurement run
+simulator_file: scripts/simulator.py
+simulator_sha256: 72a6c695752b7128fce0ffb4069c47861167315323a45980fb09a337338aeb8a
+script_file: scripts/measure_controls.py
+script_sha256: 7039a99224d3e5b3ed4bbe26856db7f1991556e8730ff5acd2625d64b8e15fdf
+controls_measured: 12
+controls_not_exercised: C10_validated_ledger_age, C12_batch_amplification
+s1_post_drop_trickle_per_s: 27.19
+s2_close_ms: {"w-mid": 20000, "w-slow": 11200}
+s4_heavy_served_before_drop: 16
+s4_medium_served_before_drop: 90
+s4_light_served: 301
+total_warnings: 7
+worst_avg_latency_ms: 250.00
+worst_peak_latency_ms: 250
+load_monitor_overloaded_anywhere: False
+csv_file: outputs/control-effectiveness.csv
+csv_sha256: 1a5625d8976fea1fd7663266960ef97e7b33eb835edbf6ca70e6da7327bac2d5
+json_file: outputs/control-effectiveness.json
+json_sha256: 0ecdbeb0cb94b143bcf965a962df60965fcd5a5fd78b1b5230c547997eff0857
