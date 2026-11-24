@@ -1,0 +1,29 @@
+scenario: S8-page-limit-clamp
+title: Page-limit clamping: limit parameters above, inside and below the documented ranges, from public and admin roles; plus an admin-only method attempted from both roles
+pinned_commit: 0085a1ff885d6a446369cf73a4430f75af22be55
+scenario_file: scenarios/S8-page-limit-clamp.json
+scenario_sha256: 7ec9be6ba5b6097b53c8fef2513c716e88b13759518d676aab9cbed6ace17d91
+simulator_file: scripts/simulator.py
+simulator_sha256: 72a6c695752b7128fce0ffb4069c47861167315323a45980fb09a337338aeb8a
+harness_file: scripts/load_harness.py
+harness_sha256: d59e87bdaed792c386870d22814f738e4f8fd057615cd9fe8feb8a64191a10f1
+duration_ms: 2000
+total_requests: 9
+served: 8
+rejected: 1
+success_rate_pct: 88.8889
+throughput_served_per_s: 4.0000
+latency_ms: min=5 p50=40.0 p95=40.0 p99=40.0 max=40 mean=34.38
+outcomes: {"rejected_no_permission": 1, "served": 8}
+controls: {"C00_served": 3, "C03_role_gate": 1, "C07_page_limits": 5}
+first_rejection_ms: 700
+first_drop_ms: None
+load_monitor: {"count": 8, "is_overloaded": false, "latency_avg_ms": 34.38, "latency_peak_ms": 40}
+per_client: {"c-admin": {"rejected": 0, "served": 2}, "c-public": {"rejected": 1, "served": 6}}
+per_endpoint: {"203.0.113.90": {"charges_total": 2400, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 2312.66, "rejected": 1, "served": 6}, "203.0.113.91": {"charges_total": 420, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 407.88, "rejected": 0, "served": 2}}
+warnings: 0
+ws_events: 0
+csv_file: outputs/S8-page-limit-clamp.csv
+csv_sha256: 76fe17dd57f01fffa75c3b43eb32075b16b33f640a74eee944132cb9ab5799a7
+json_file: outputs/S8-page-limit-clamp.json
+json_sha256: a52903f2e0fe8d51f69cee53583759dfe5bb205bce2fcbe942bb8724feb7ed0b

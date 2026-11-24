@@ -1,0 +1,116 @@
+{
+  "controls": {
+    "C00_served": 1381,
+    "C04_resource_balance": 3706
+  },
+  "duration_ms": 10000,
+  "first_drop_ms": 2167,
+  "first_rejection_ms": 2167,
+  "latency_ms": {
+    "count": 1381,
+    "max": 5,
+    "mean": 5.0,
+    "min": 5,
+    "p50": 5.0,
+    "p95": 5.0,
+    "p99": 5.0
+  },
+  "load_monitor": {
+    "count": 1381,
+    "is_overloaded": false,
+    "latency_avg_ms": 5.0,
+    "latency_peak_ms": 5
+  },
+  "outcomes": {
+    "rejected_overloaded_503": 3706,
+    "served": 1381
+  },
+  "per_client": {
+    "c-abusive": {
+      "rejected": 3706,
+      "served": 1297
+    },
+    "c-benign-1": {
+      "rejected": 0,
+      "served": 21
+    },
+    "c-benign-2": {
+      "rejected": 0,
+      "served": 21
+    },
+    "c-benign-3": {
+      "rejected": 0,
+      "served": 21
+    },
+    "c-benign-4": {
+      "rejected": 0,
+      "served": 21
+    }
+  },
+  "per_endpoint": {
+    "203.0.113.80": {
+      "charges_total": 25940,
+      "disconnect_ms": 9999,
+      "disconnect_reason": "rejected_overloaded_503",
+      "disconnected": true,
+      "final_balance": 25053.92,
+      "rejected": 3706,
+      "served": 1297
+    },
+    "203.0.113.81": {
+      "charges_total": 420,
+      "disconnect_ms": null,
+      "disconnect_reason": null,
+      "disconnected": false,
+      "final_balance": 377.54,
+      "rejected": 0,
+      "served": 21
+    },
+    "203.0.113.82": {
+      "charges_total": 420,
+      "disconnect_ms": null,
+      "disconnect_reason": null,
+      "disconnected": false,
+      "final_balance": 376.34,
+      "rejected": 0,
+      "served": 21
+    },
+    "203.0.113.83": {
+      "charges_total": 420,
+      "disconnect_ms": null,
+      "disconnect_reason": null,
+      "disconnected": false,
+      "final_balance": 377.02,
+      "rejected": 0,
+      "served": 21
+    },
+    "203.0.113.84": {
+      "charges_total": 420,
+      "disconnect_ms": null,
+      "disconnect_reason": null,
+      "disconnected": false,
+      "final_balance": 377.32,
+      "rejected": 0,
+      "served": 21
+    }
+  },
+  "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+  "rejected": 3706,
+  "scenario": "S7-multi-ip-isolation",
+  "served": 1381,
+  "simulated": true,
+  "success_rate_pct": 27.1476,
+  "throughput_served_per_s": 138.1,
+  "title": "Per-IP isolation: one abusive IP flooding at 500 reference queries per second while four benign IPs send 2 per second each",
+  "total_requests": 5087,
+  "warnings": [
+    {
+      "balance": 9012.52,
+      "client": "c-abusive",
+      "detail": "balance crossed warningThreshold 5000; feeWarning 4000 charged",
+      "ip": "203.0.113.80",
+      "t_ms": 509
+    }
+  ],
+  "ws_events": []
+}

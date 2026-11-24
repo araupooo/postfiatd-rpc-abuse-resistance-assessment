@@ -1,0 +1,91 @@
+{
+  "controls": {
+    "C00_served": 3,
+    "C01_port_limit": 4
+  },
+  "duration_ms": 2000,
+  "first_drop_ms": null,
+  "first_rejection_ms": 0,
+  "latency_ms": {
+    "count": 3,
+    "max": 5,
+    "mean": 5.0,
+    "min": 5,
+    "p50": 5.0,
+    "p95": 5.0,
+    "p99": 5.0
+  },
+  "load_monitor": {
+    "count": 3,
+    "is_overloaded": false,
+    "latency_avg_ms": 5.0,
+    "latency_peak_ms": 5
+  },
+  "outcomes": {
+    "rejected_client_gone": 2,
+    "rejected_connection_limit": 2,
+    "served": 3
+  },
+  "per_client": {
+    "c-conn-1": {
+      "rejected": 0,
+      "served": 1
+    },
+    "c-conn-2": {
+      "rejected": 0,
+      "served": 1
+    },
+    "c-conn-3": {
+      "rejected": 0,
+      "served": 1
+    },
+    "c-conn-4": {
+      "rejected": 2,
+      "served": 0
+    },
+    "c-conn-5": {
+      "rejected": 2,
+      "served": 0
+    }
+  },
+  "per_endpoint": {
+    "203.0.113.101": {
+      "charges_total": 20,
+      "disconnect_ms": null,
+      "disconnect_reason": null,
+      "disconnected": false,
+      "final_balance": 19.15,
+      "rejected": 0,
+      "served": 1
+    },
+    "203.0.113.102": {
+      "charges_total": 20,
+      "disconnect_ms": null,
+      "disconnect_reason": null,
+      "disconnected": false,
+      "final_balance": 19.15,
+      "rejected": 0,
+      "served": 1
+    },
+    "203.0.113.103": {
+      "charges_total": 20,
+      "disconnect_ms": null,
+      "disconnect_reason": null,
+      "disconnected": false,
+      "final_balance": 19.15,
+      "rejected": 0,
+      "served": 1
+    }
+  },
+  "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+  "rejected": 4,
+  "scenario": "S9-connection-limit",
+  "served": 3,
+  "simulated": true,
+  "success_rate_pct": 42.8571,
+  "throughput_served_per_s": 1.5,
+  "title": "Connection limit: five clients connect to a port configured with limit 3",
+  "total_requests": 7,
+  "warnings": [],
+  "ws_events": []
+}

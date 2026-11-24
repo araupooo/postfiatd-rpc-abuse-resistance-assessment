@@ -1,0 +1,10 @@
+t_ms,client,ip,transport,method,payload_bytes,outcome,control,latency_ms,balance_after,queue_depth,detail
+0,c-public,203.0.113.90,http,account_lines,512,served,C07_page_limits,40,400.0,0,limit 10000 clamped to 400 (range 10-400)
+100,c-public,203.0.113.90,http,account_lines,512,served,C00_served,40,799.13,0,limit 400 within range 10-400
+200,c-public,203.0.113.90,http,account_lines,512,served,C07_page_limits,40,1197.41,0,limit 5 clamped to 10 (range 10-400)
+300,c-public,203.0.113.90,http,account_lines,512,served,C07_page_limits,40,1594.81,0,limit 0 clamped to 10 (range 10-400)
+400,c-public,203.0.113.90,http,book_offers,512,served,C07_page_limits,30,1991.71,0,limit 500 clamped to 100 (range 0-100)
+500,c-public,203.0.113.90,http,account_nftokens,512,served,C07_page_limits,40,2386.97,0,limit 1000 clamped to 400 (range 20-400)
+600,c-admin,203.0.113.91,http,account_lines,512,served,C00_served,40,400.0,0,limit 10000 served unclamped (unlimited role)
+700,c-public,203.0.113.90,http,ledger_entry_admin,512,rejected_no_permission,C03_role_gate,0,0,0,admin-only handler from role PUBLIC
+800,c-admin,203.0.113.91,http,ledger_entry_admin,512,served,C00_served,5,418.57,0,

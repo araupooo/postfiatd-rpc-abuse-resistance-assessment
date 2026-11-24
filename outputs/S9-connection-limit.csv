@@ -1,0 +1,8 @@
+t_ms,client,ip,transport,method,payload_bytes,outcome,control,latency_ms,balance_after,queue_depth,detail
+0,c-conn-1,203.0.113.101,http,server_info,512,served,C00_served,5,20.0,0,
+0,c-conn-2,203.0.113.102,http,server_info,512,served,C00_served,5,20.0,0,
+0,c-conn-3,203.0.113.103,http,server_info,512,served,C00_served,5,20.0,0,
+0,c-conn-4,203.0.113.104,http,-,0,rejected_connection_limit,C01_port_limit,0,0,0,connection refused: port limit reached
+0,c-conn-4,?,http,server_info,512,rejected_client_gone,C01_port_limit,0,0,0,client not connected
+0,c-conn-5,203.0.113.105,http,-,0,rejected_connection_limit,C01_port_limit,0,0,0,connection refused: port limit reached
+0,c-conn-5,?,http,server_info,512,rejected_client_gone,C01_port_limit,0,0,0,client not connected
