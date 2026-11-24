@@ -1,0 +1,29 @@
+scenario: S0-baseline
+title: Baseline realistic load: one public IP, light reference queries only
+pinned_commit: 0085a1ff885d6a446369cf73a4430f75af22be55
+scenario_file: scenarios/S0-baseline.json
+scenario_sha256: 9959f003d78a2740b7d07c956eb5151f48acd85b935cb09055005535863aeea1
+simulator_file: scripts/simulator.py
+simulator_sha256: 72a6c695752b7128fce0ffb4069c47861167315323a45980fb09a337338aeb8a
+harness_file: scripts/load_harness.py
+harness_sha256: d59e87bdaed792c386870d22814f738e4f8fd057615cd9fe8feb8a64191a10f1
+duration_ms: 60000
+total_requests: 420
+served: 420
+rejected: 0
+success_rate_pct: 100.0000
+throughput_served_per_s: 7.0000
+latency_ms: min=5 p50=5.0 p95=5.0 p99=5.0 max=5 mean=5.0
+outcomes: {"served": 420}
+controls: {"C00_served": 420}
+first_rejection_ms: None
+first_drop_ms: None
+load_monitor: {"count": 420, "is_overloaded": false, "latency_avg_ms": 5.0, "latency_peak_ms": 5}
+per_client: {"c-baseline": {"rejected": 0, "served": 420}}
+per_endpoint: {"203.0.113.10": {"charges_total": 8400, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 4690.84, "rejected": 0, "served": 420}}
+warnings: 0
+ws_events: 0
+csv_file: outputs/S0-baseline.csv
+csv_sha256: 6ace162000b1a5139f9ff6b2a971a592a59c2c25098d79737fac859c64e805b6
+json_file: outputs/S0-baseline.json
+json_sha256: 4dd4ad80a81adbbc34b83b1bd0d6e8c41f1a5d567e16d81a18234b90f633b0c2

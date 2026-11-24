@@ -1,0 +1,64 @@
+{
+  "controls": {
+    "C00_served": 1297,
+    "C04_resource_balance": 3706
+  },
+  "duration_ms": 10000,
+  "first_drop_ms": 2167,
+  "first_rejection_ms": 2167,
+  "latency_ms": {
+    "count": 1297,
+    "max": 5,
+    "mean": 5.0,
+    "min": 5,
+    "p50": 5.0,
+    "p95": 5.0,
+    "p99": 5.0
+  },
+  "load_monitor": {
+    "count": 1297,
+    "is_overloaded": false,
+    "latency_avg_ms": 5.0,
+    "latency_peak_ms": 5
+  },
+  "outcomes": {
+    "rejected_overloaded_503": 3706,
+    "served": 1297
+  },
+  "per_client": {
+    "c-flood": {
+      "rejected": 3706,
+      "served": 1297
+    }
+  },
+  "per_endpoint": {
+    "203.0.113.20": {
+      "charges_total": 25940,
+      "disconnect_ms": 9999,
+      "disconnect_reason": "rejected_overloaded_503",
+      "disconnected": true,
+      "final_balance": 25053.92,
+      "rejected": 3706,
+      "served": 1297
+    }
+  },
+  "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+  "rejected": 3706,
+  "scenario": "S1-burst-single-ip",
+  "served": 1297,
+  "simulated": true,
+  "success_rate_pct": 25.9244,
+  "throughput_served_per_s": 129.7,
+  "title": "Burst flood: one public IP sending cheap reference queries at 500 per second",
+  "total_requests": 5003,
+  "warnings": [
+    {
+      "balance": 9012.52,
+      "client": "c-flood",
+      "detail": "balance crossed warningThreshold 5000; feeWarning 4000 charged",
+      "ip": "203.0.113.20",
+      "t_ms": 509
+    }
+  ],
+  "ws_events": []
+}

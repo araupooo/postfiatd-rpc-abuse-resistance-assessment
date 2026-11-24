@@ -1,0 +1,8 @@
+t_ms,client,ip,transport,method,payload_bytes,outcome,control,latency_ms,balance_after,queue_depth,detail
+0,c-pf,203.0.113.110,http,path_find,512,rejected_pathfind_cap,C06_pathfind_caps,0,0,0,maxPathfindsInProgress 2 already in progress
+0,c-pf,203.0.113.110,http,path_find,512,rejected_pathfind_cap,C06_pathfind_caps,0,0,0,maxPathfindsInProgress 2 already in progress
+0,c-pf,203.0.113.110,http,path_find,512,rejected_pathfind_cap,C06_pathfind_caps,0,0,0,maxPathfindsInProgress 2 already in progress
+0,c-pf,203.0.113.110,http,path_find,512,served,C00_served,120,400.0,0,
+0,c-pf,203.0.113.110,http,path_find,512,served,C00_served,120,800.0,0,
+200,c-pf,203.0.113.110,http,path_find,512,served,C00_served,120,1196.54,0,
+200,c-pf,203.0.113.110,http,path_find,512,served,C00_served,120,1596.54,0,

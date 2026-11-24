@@ -1,0 +1,29 @@
+scenario: S10-pathfind-cap
+title: Pathfind concurrency cap: two bursts of path_find against maxPathfindsInProgress 2
+pinned_commit: 0085a1ff885d6a446369cf73a4430f75af22be55
+scenario_file: scenarios/S10-pathfind-cap.json
+scenario_sha256: cbad72433e75b219a8a944501b7d2b5f25ec4b6c4b56afc3c2e79f6f3949e339
+simulator_file: scripts/simulator.py
+simulator_sha256: 72a6c695752b7128fce0ffb4069c47861167315323a45980fb09a337338aeb8a
+harness_file: scripts/load_harness.py
+harness_sha256: d59e87bdaed792c386870d22814f738e4f8fd057615cd9fe8feb8a64191a10f1
+duration_ms: 2000
+total_requests: 7
+served: 4
+rejected: 3
+success_rate_pct: 57.1429
+throughput_served_per_s: 2.0000
+latency_ms: min=120 p50=120.0 p95=120.0 p99=120.0 max=120 mean=120.0
+outcomes: {"rejected_pathfind_cap": 3, "served": 4}
+controls: {"C00_served": 4, "C06_pathfind_caps": 3}
+first_rejection_ms: 0
+first_drop_ms: None
+load_monitor: {"count": 4, "is_overloaded": false, "latency_avg_ms": 120.0, "latency_peak_ms": 120}
+per_client: {"c-pf": {"rejected": 3, "served": 4}}
+per_endpoint: {"203.0.113.110": {"charges_total": 1600, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 1539.49, "rejected": 3, "served": 4}}
+warnings: 0
+ws_events: 0
+csv_file: outputs/S10-pathfind-cap.csv
+csv_sha256: 5fc57ea331cb127676594c9daa4f593b0062cc7843f311841561959a7f865783
+json_file: outputs/S10-pathfind-cap.json
+json_sha256: 8c9e29336ca9c7e8cd6aee085f03483b34b74ebef9ed50204dd94839994a11c4

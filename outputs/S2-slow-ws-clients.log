@@ -1,0 +1,29 @@
+scenario: S2-slow-ws-clients
+title: Slow WebSocket subscribers: three clients draining at 1, 5 and 20 messages per second against 10 pushes per second
+pinned_commit: 0085a1ff885d6a446369cf73a4430f75af22be55
+scenario_file: scenarios/S2-slow-ws-clients.json
+scenario_sha256: 9ef9df0dfce47bab0c05850c9514cdb7a91981dacd053dbadda799fbfa1a87de
+simulator_file: scripts/simulator.py
+simulator_sha256: 72a6c695752b7128fce0ffb4069c47861167315323a45980fb09a337338aeb8a
+harness_file: scripts/load_harness.py
+harness_sha256: d59e87bdaed792c386870d22814f738e4f8fd057615cd9fe8feb8a64191a10f1
+duration_ms: 30000
+total_requests: 3
+served: 3
+rejected: 0
+success_rate_pct: 100.0000
+throughput_served_per_s: 0.1000
+latency_ms: min=10 p50=10.0 p95=10.0 p99=10.0 max=10 mean=10.0
+outcomes: {"served": 3}
+controls: {"C00_served": 3}
+first_rejection_ms: None
+first_drop_ms: None
+load_monitor: {"count": 3, "is_overloaded": false, "latency_avg_ms": 10.0, "latency_peak_ms": 10}
+per_client: {"w-fast": {"rejected": 0, "served": 1}, "w-mid": {"rejected": 0, "served": 1}, "w-slow": {"rejected": 0, "served": 1}}
+per_endpoint: {"203.0.113.31": {"charges_total": 400, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 208.9, "rejected": 0, "served": 1}, "203.0.113.32": {"charges_total": 400, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 208.9, "rejected": 0, "served": 1}, "203.0.113.33": {"charges_total": 400, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 208.9, "rejected": 0, "served": 1}}
+warnings: 0
+ws_events: 1028
+csv_file: outputs/S2-slow-ws-clients.csv
+csv_sha256: 7de947080a22c5dbcd7183d79a01032e811b0c5233ffd7812a9602d3154d0c26
+json_file: outputs/S2-slow-ws-clients.json
+json_sha256: 25f1711e59c781df08471fc35db545f02d7674d5c0739a15a542da2f12ae15f3

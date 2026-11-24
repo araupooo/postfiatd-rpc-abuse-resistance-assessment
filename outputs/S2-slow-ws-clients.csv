@@ -1,0 +1,4 @@
+t_ms,client,ip,transport,method,payload_bytes,outcome,control,latency_ms,balance_after,queue_depth,detail
+0,w-fast,203.0.113.33,ws,subscribe,256,served,C00_served,10,400.0,0,
+0,w-mid,203.0.113.32,ws,subscribe,256,served,C00_served,10,400.0,0,
+0,w-slow,203.0.113.31,ws,subscribe,256,served,C00_served,10,400.0,0,
