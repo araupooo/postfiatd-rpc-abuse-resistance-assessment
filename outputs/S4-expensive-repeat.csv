@@ -1,0 +1,902 @@
+t_ms,client,ip,transport,method,payload_bytes,outcome,control,latency_ms,balance_after,queue_depth,detail
+0,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,3000.0,0,
+0,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,20.0,0,
+0,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,400.0,0,
+91,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,39.96,0,
+95,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,9993.83,0,
+110,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,799.05,0,
+186,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,59.88,0,
+187,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,12973.94,0,
+201,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,1197.47,0,
+282,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,79.75,0,
+288,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,15945.58,0,
+298,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,1594.96,0,
+374,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,99.6,0,
+397,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,18907.98,0,
+404,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,1991.3,0,
+467,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,119.39,0,
+500,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,2387.17,0,
+505,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,21863.8,0,
+557,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,139.16,0,
+601,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,2781.95,0,
+605,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,24816.49,0,
+649,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,158.89,0,
+702,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,3175.87,0,
+714,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,27757.97,0,
+754,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,178.52,0,
+799,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,3569.2,0,
+810,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,30700.31,0,
+859,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,198.12,0,
+890,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,3962.18,0,
+903,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,33638.53,0,
+960,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,217.69,0,
+999,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,4352.83,0,
+1011,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27729.72,0,balance 27729.72 at or above dropThreshold 25000
+1064,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,237.2,0,
+1095,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,4743.79,0,
+1112,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30665.75,0,balance 30665.75 at or above dropThreshold 25000
+1162,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,256.69,0,
+1192,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,9133.83,0,
+1204,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33601.39,0,balance 33601.39 at or above dropThreshold 25000
+1265,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,276.12,0,
+1295,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33535.22,0,balance 33535.22 at or above dropThreshold 25000
+1296,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,9513.28,0,
+1360,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,295.55,0,
+1399,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,9892.08,0,
+1404,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33456.13,0,balance 33456.13 at or above dropThreshold 25000
+1453,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,314.96,0,
+1492,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,10272.17,0,
+1500,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33386.64,0,balance 33386.64 at or above dropThreshold 25000
+1562,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,334.22,0,
+1594,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,10649.5,0,
+1599,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33315.12,0,balance 33315.12 at or above dropThreshold 25000
+1661,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,353.5,0,
+1689,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,11027.61,0,
+1708,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33236.55,0,balance 33236.55 at or above dropThreshold 25000
+1766,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,372.7,0,
+1786,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,11404.46,0,
+1816,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33158.89,0,balance 33158.89 at or above dropThreshold 25000
+1861,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,391.93,0,
+1879,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,11781.51,0,
+1921,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33083.56,0,balance 33083.56 at or above dropThreshold 25000
+1956,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,411.12,0,
+1980,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,12155.77,0,
+2018,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33014.12,0,balance 33014.12 at or above dropThreshold 25000
+2061,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,430.19,0,
+2072,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,12531.57,0,
+2115,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32944.83,0,balance 32944.83 at or above dropThreshold 25000
+2160,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,449.27,0,
+2180,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,12902.29,0,
+2213,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32874.97,0,balance 32874.97 at or above dropThreshold 25000
+2266,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,468.24,0,
+2279,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,13274.65,0,
+2309,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32806.68,0,balance 32806.68 at or above dropThreshold 25000
+2361,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,487.28,0,
+2388,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,13643.34,0,
+2412,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32733.56,0,balance 32733.56 at or above dropThreshold 25000
+2457,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,506.26,0,
+2484,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,14015.0,0,
+2513,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32662.03,0,balance 32662.03 at or above dropThreshold 25000
+2566,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,525.07,0,
+2591,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,14382.56,0,
+2611,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32592.77,0,balance 32592.77 at or above dropThreshold 25000
+2670,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,543.89,0,
+2695,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,14750.19,0,
+2702,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32528.59,0,balance 32528.59 at or above dropThreshold 25000
+2779,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,562.61,0,
+2793,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,15118.91,0,
+2807,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32454.69,0,balance 32454.69 at or above dropThreshold 25000
+2888,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,581.28,0,
+2891,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,15486.85,0,
+2898,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32390.78,0,balance 32390.78 at or above dropThreshold 25000
+2985,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,600.06,0,
+3001,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,15850.0,0,
+3004,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32316.49,0,balance 32316.49 at or above dropThreshold 25000
+3090,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,618.7,0,
+3103,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32247.27,0,balance 32247.27 at or above dropThreshold 25000
+3106,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,16213.99,0,
+3180,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,637.49,0,
+3201,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,16580.66,0,
+3203,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32177.49,0,balance 32177.49 at or above dropThreshold 25000
+3275,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,656.18,0,
+3302,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32108.57,0,balance 32108.57 at or above dropThreshold 25000
+3304,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,16943.71,0,
+3373,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,674.79,0,
+3398,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32041.87,0,balance 32041.87 at or above dropThreshold 25000
+3399,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,17308.88,0,
+3473,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,693.33,0,
+3496,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,17672.55,0,
+3497,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31973.23,0,balance 31973.23 at or above dropThreshold 25000
+3568,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,711.9,0,
+3594,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,18035.07,0,
+3599,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31902.67,0,balance 31902.67 at or above dropThreshold 25000
+3662,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,730.46,0,
+3697,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,18394.88,0,
+3701,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31832.26,0,balance 31832.26 at or above dropThreshold 25000
+3759,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,748.92,0,
+3788,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,18758.66,0,
+3796,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31766.82,0,balance 31766.82 at or above dropThreshold 25000
+3855,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,767.37,0,
+3881,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,19120.91,0,
+3899,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31696.03,0,balance 31696.03 at or above dropThreshold 25000
+3955,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,785.71,0,
+3979,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,19480.36,0,
+4000,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31626.76,0,balance 31626.76 at or above dropThreshold 25000
+4064,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,803.85,0,
+4070,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,19842.0,0,
+4102,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31556.96,0,balance 31556.96 at or above dropThreshold 25000
+4170,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,822.01,0,
+4171,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,20198.64,0,
+4196,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31492.77,0,balance 31492.77 at or above dropThreshold 25000
+4263,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,840.36,0,
+4276,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,20552.75,0,
+4294,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31425.99,0,balance 31425.99 at or above dropThreshold 25000
+4359,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,858.61,0,
+4369,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,20911.39,0,
+4386,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31363.43,0,balance 31363.43 at or above dropThreshold 25000
+4462,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,876.7,0,
+4471,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,21265.24,0,
+4491,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31292.18,0,balance 31292.18 at or above dropThreshold 25000
+4564,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,894.76,0,
+4564,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,21622.44,0,
+4587,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31227.17,0,balance 31227.17 at or above dropThreshold 25000
+4664,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,21975.66,0,
+4668,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,912.75,0,
+4686,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31160.28,0,balance 31160.28 at or above dropThreshold 25000
+4762,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,930.89,0,
+4771,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,22324.78,0,
+4776,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31099.59,0,balance 31099.59 at or above dropThreshold 25000
+4855,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,949.02,0,
+4863,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,22680.34,0,
+4879,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31030.29,0,balance 31030.29 at or above dropThreshold 25000
+4955,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,23035.19,0,
+4958,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,966.9,0,
+4972,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30967.84,0,balance 30967.84 at or above dropThreshold 25000
+5058,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,23383.85,0,
+5060,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,984.77,0,
+5068,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30903.51,0,balance 30903.51 at or above dropThreshold 25000
+5152,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1002.81,0,
+5162,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,23731.23,0,
+5168,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30836.64,0,balance 30836.64 at or above dropThreshold 25000
+5256,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1020.55,0,
+5269,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,24076.3,0,
+5276,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30764.59,0,balance 30764.59 at or above dropThreshold 25000
+5348,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1038.52,0,
+5377,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,24420.04,0,
+5379,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30696.03,0,balance 30696.03 at or above dropThreshold 25000
+5451,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1056.21,0,
+5468,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,24771.95,0,
+5478,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30630.27,0,balance 30630.27 at or above dropThreshold 25000
+5555,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1073.83,0,
+5571,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30568.63,0,balance 30568.63 at or above dropThreshold 25000
+5578,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25113.0,0,
+5664,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1091.3,0,
+5673,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25083.1,0,balance 25083.10 at or above dropThreshold 25000
+5675,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30499.85,0,balance 30499.85 at or above dropThreshold 25000
+5767,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1108.87,0,
+5776,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25027.2,0,balance 25027.20 at or above dropThreshold 25000
+5784,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30427.92,0,balance 30427.92 at or above dropThreshold 25000
+5872,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25353.58,0,
+5875,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1126.27,0,
+5880,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30364.71,0,balance 30364.71 at or above dropThreshold 25000
+5971,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1143.94,0,
+5981,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25315.71,0,balance 25315.71 at or above dropThreshold 25000
+5983,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30297.04,0,balance 30297.04 at or above dropThreshold 25000
+6061,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1161.71,0,
+6076,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25263.67,0,balance 25263.67 at or above dropThreshold 25000
+6093,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30224.94,0,balance 30224.94 at or above dropThreshold 25000
+6169,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1178.99,0,
+6170,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25212.28,0,balance 25212.28 at or above dropThreshold 25000
+6197,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30156.93,0,balance 30156.93 at or above dropThreshold 25000
+6265,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25160.46,0,balance 25160.46 at or above dropThreshold 25000
+6277,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1196.24,0,
+6303,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30087.77,0,balance 30087.77 at or above dropThreshold 25000
+6370,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25103.3,0,balance 25103.30 at or above dropThreshold 25000
+6374,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1213.73,0,
+6412,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30016.81,0,balance 30016.81 at or above dropThreshold 25000
+6466,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25051.15,0,balance 25051.15 at or above dropThreshold 25000
+6480,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1230.94,0,
+6504,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29957.05,0,balance 29957.05 at or above dropThreshold 25000
+6572,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25372.05,0,
+6585,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1248.15,0,
+6612,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29887.05,0,balance 29887.05 at or above dropThreshold 25000
+6670,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25340.2,0,balance 25340.20 at or above dropThreshold 25000
+6680,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1265.58,0,
+6715,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29820.45,0,balance 29820.45 at or above dropThreshold 25000
+6773,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25283.72,0,balance 25283.72 at or above dropThreshold 25000
+6780,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1282.84,0,
+6819,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29753.35,0,balance 29753.35 at or above dropThreshold 25000
+6871,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25230.11,0,balance 25230.11 at or above dropThreshold 25000
+6888,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1299.85,0,
+6921,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29687.68,0,balance 29687.68 at or above dropThreshold 25000
+6969,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25176.61,0,balance 25176.61 at or above dropThreshold 25000
+6979,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1317.29,0,
+7022,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29622.8,0,balance 29622.80 at or above dropThreshold 25000
+7074,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25119.41,0,balance 25119.41 at or above dropThreshold 25000
+7075,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1334.55,0,
+7129,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29554.23,0,balance 29554.23 at or above dropThreshold 25000
+7176,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25063.97,0,balance 25063.97 at or above dropThreshold 25000
+7178,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1351.58,0,
+7230,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29489.64,0,balance 29489.64 at or above dropThreshold 25000
+7269,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1368.91,0,
+7278,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25008.66,0,balance 25008.66 at or above dropThreshold 25000
+7327,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29427.74,0,balance 29427.74 at or above dropThreshold 25000
+7367,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1386.01,0,
+7373,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25335.63,0,
+7427,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29364.07,0,balance 29364.07 at or above dropThreshold 25000
+7458,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1403.28,0,
+7476,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25301.08,0,balance 25301.08 at or above dropThreshold 25000
+7522,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29303.71,0,balance 29303.71 at or above dropThreshold 25000
+7560,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1420.18,0,
+7574,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25247.43,0,balance 25247.43 at or above dropThreshold 25000
+7616,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29244.1,0,balance 29244.10 at or above dropThreshold 25000
+7664,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1436.99,0,
+7679,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25190.08,0,balance 25190.08 at or above dropThreshold 25000
+7707,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29186.52,0,balance 29186.52 at or above dropThreshold 25000
+7773,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1453.6,0,
+7773,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25138.84,0,balance 25138.84 at or above dropThreshold 25000
+7803,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29125.89,0,balance 29125.89 at or above dropThreshold 25000
+7865,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1470.71,0,
+7874,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25083.9,0,balance 25083.90 at or above dropThreshold 25000
+7895,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29067.9,0,balance 29067.90 at or above dropThreshold 25000
+7972,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1487.3,0,
+7978,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25027.46,0,balance 25027.46 at or above dropThreshold 25000
+7992,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29006.89,0,balance 29006.89 at or above dropThreshold 25000
+8076,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1503.95,0,
+8086,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28947.89,0,balance 28947.89 at or above dropThreshold 25000
+8088,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25346.27,0,
+8182,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25316.64,0,balance 25316.64 at or above dropThreshold 25000
+8183,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28887.13,0,balance 28887.13 at or above dropThreshold 25000
+8183,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1520.47,0,
+8280,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28826.5,0,balance 28826.50 at or above dropThreshold 25000
+8283,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25261.32,0,balance 25261.32 at or above dropThreshold 25000
+8286,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1537.08,0,
+8378,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28765.37,0,balance 28765.37 at or above dropThreshold 25000
+8380,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1553.96,0,
+8392,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25201.74,0,balance 25201.74 at or above dropThreshold 25000
+8484,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1570.46,0,
+8487,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28697.54,0,balance 28697.54 at or above dropThreshold 25000
+8491,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25147.76,0,balance 25147.76 at or above dropThreshold 25000
+8588,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25094.98,0,balance 25094.98 at or above dropThreshold 25000
+8590,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1586.86,0,
+8593,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28631.72,0,balance 28631.72 at or above dropThreshold 25000
+8688,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28572.87,0,balance 28572.87 at or above dropThreshold 25000
+8690,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1603.43,0,
+8696,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25036.34,0,balance 25036.34 at or above dropThreshold 25000
+8788,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28511.04,0,balance 28511.04 at or above dropThreshold 25000
+8794,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1619.82,0,
+8805,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25355.66,0,
+8894,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1636.31,0,
+8895,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28445.04,0,balance 28445.04 at or above dropThreshold 25000
+8912,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25318.89,0,balance 25318.89 at or above dropThreshold 25000
+8986,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28389.02,0,balance 28389.02 at or above dropThreshold 25000
+8990,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1652.91,0,
+9002,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25269.58,0,balance 25269.58 at or above dropThreshold 25000
+9095,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28322.07,0,balance 28322.07 at or above dropThreshold 25000
+9100,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1668.98,0,
+9105,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25213.27,0,balance 25213.27 at or above dropThreshold 25000
+9202,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28256.51,0,balance 28256.51 at or above dropThreshold 25000
+9205,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1685.19,0,
+9210,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25155.99,0,balance 25155.99 at or above dropThreshold 25000
+9296,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1701.87,0,
+9304,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28194.15,0,balance 28194.15 at or above dropThreshold 25000
+9312,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25100.47,0,balance 25100.47 at or above dropThreshold 25000
+9390,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1718.41,0,
+9406,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28131.92,0,balance 28131.92 at or above dropThreshold 25000
+9406,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25049.41,0,balance 25049.41 at or above dropThreshold 25000
+9487,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1734.8,0,
+9508,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28069.84,0,balance 28069.84 at or above dropThreshold 25000
+9511,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25370.86,0,
+9578,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1751.39,0,
+9602,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25342.85,0,balance 25342.85 at or above dropThreshold 25000
+9616,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28004.25,0,balance 28004.25 at or above dropThreshold 25000
+9682,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1767.44,0,
+9702,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25288.01,0,balance 25288.01 at or above dropThreshold 25000
+9718,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27942.44,0,balance 27942.44 at or above dropThreshold 25000
+9777,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1783.81,0,
+9798,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25235.48,0,balance 25235.48 at or above dropThreshold 25000
+9824,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27878.36,0,balance 27878.36 at or above dropThreshold 25000
+9874,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1800.07,0,
+9898,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25180.88,0,balance 25180.88 at or above dropThreshold 25000
+9928,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27815.63,0,balance 27815.63 at or above dropThreshold 25000
+9981,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1815.9,0,
+9993,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25129.12,0,balance 25129.12 at or above dropThreshold 25000
+10022,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27759.05,0,balance 27759.05 at or above dropThreshold 25000
+10072,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1832.32,0,
+10090,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25076.37,0,balance 25076.37 at or above dropThreshold 25000
+10125,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27697.19,0,balance 27697.19 at or above dropThreshold 25000
+10170,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1848.44,0,
+10199,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25017.24,0,balance 25017.24 at or above dropThreshold 25000
+10216,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27642.65,0,balance 27642.65 at or above dropThreshold 25000
+10260,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1864.84,0,
+10303,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25339.33,0,
+10323,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27578.65,0,balance 27578.65 at or above dropThreshold 25000
+10364,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1880.64,0,
+10401,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25307.51,0,balance 25307.51 at or above dropThreshold 25000
+10425,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27517.79,0,balance 27517.79 at or above dropThreshold 25000
+10469,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1896.37,0,
+10495,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25256.03,0,balance 25256.03 at or above dropThreshold 25000
+10516,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27463.6,0,balance 27463.60 at or above dropThreshold 25000
+10576,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1911.98,0,
+10602,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25197.57,0,balance 25197.57 at or above dropThreshold 25000
+10608,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27408.92,0,balance 27408.92 at or above dropThreshold 25000
+10677,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1927.8,0,
+10704,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25141.96,0,balance 25141.96 at or above dropThreshold 25000
+10717,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27344.29,0,balance 27344.29 at or above dropThreshold 25000
+10784,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1943.34,0,
+10809,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25084.84,0,balance 25084.84 at or above dropThreshold 25000
+10818,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27284.53,0,balance 27284.53 at or above dropThreshold 25000
+10874,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1959.55,0,
+10902,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25034.36,0,balance 25034.36 at or above dropThreshold 25000
+10928,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27219.6,0,balance 27219.60 at or above dropThreshold 25000
+10973,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1975.36,0,
+11009,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25354.77,0,
+11029,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27160.11,0,balance 27160.11 at or above dropThreshold 25000
+11078,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,1990.87,0,
+11107,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25322.94,0,balance 25322.94 at or above dropThreshold 25000
+11139,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27095.48,0,balance 27095.48 at or above dropThreshold 25000
+11188,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2006.13,0,
+11212,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25265.41,0,balance 25265.41 at or above dropThreshold 25000
+11229,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27042.7,0,balance 27042.70 at or above dropThreshold 25000
+11286,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2021.88,0,
+11321,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25205.83,0,balance 25205.83 at or above dropThreshold 25000
+11331,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26983.02,0,balance 26983.02 at or above dropThreshold 25000
+11385,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2037.55,0,
+11413,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25155.65,0,balance 25155.65 at or above dropThreshold 25000
+11430,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26925.22,0,balance 26925.22 at or above dropThreshold 25000
+11486,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2053.09,0,
+11512,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25101.76,0,balance 25101.76 at or above dropThreshold 25000
+11538,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26862.31,0,balance 26862.31 at or above dropThreshold 25000
+11576,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2069.09,0,
+11617,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25044.73,0,balance 25044.73 at or above dropThreshold 25000
+11632,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26807.67,0,balance 26807.67 at or above dropThreshold 25000
+11674,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2084.71,0,
+11720,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25367.28,0,
+11726,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26753.14,0,balance 26753.14 at or above dropThreshold 25000
+11778,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2100.02,0,
+11812,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25338.72,0,balance 25338.72 at or above dropThreshold 25000
+11829,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26693.52,0,balance 26693.52 at or above dropThreshold 25000
+11869,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2115.88,0,
+11913,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25283.35,0,balance 25283.35 at or above dropThreshold 25000
+11920,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26640.95,0,balance 26640.95 at or above dropThreshold 25000
+11966,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2131.44,0,
+12010,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26589.07,0,balance 26589.07 at or above dropThreshold 25000
+12014,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25228.09,0,balance 25228.09 at or above dropThreshold 25000
+12066,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2146.83,0,
+12111,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26530.96,0,balance 26530.96 at or above dropThreshold 25000
+12112,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25174.6,0,balance 25174.60 at or above dropThreshold 25000
+12156,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2162.65,0,
+12206,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26476.42,0,balance 26476.42 at or above dropThreshold 25000
+12210,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25121.21,0,balance 25121.21 at or above dropThreshold 25000
+12257,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2177.92,0,
+12301,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26422.0,0,balance 26422.00 at or above dropThreshold 25000
+12315,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25064.14,0,balance 25064.14 at or above dropThreshold 25000
+12352,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2193.44,0,
+12399,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26365.97,0,balance 26365.97 at or above dropThreshold 25000
+12405,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25015.33,0,balance 25015.33 at or above dropThreshold 25000
+12443,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2209.12,0,
+12505,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26305.5,0,balance 26305.50 at or above dropThreshold 25000
+12505,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25339.58,0,
+12545,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2224.25,0,
+12605,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25306.67,0,balance 25306.67 at or above dropThreshold 25000
+12610,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26245.74,0,balance 26245.74 at or above dropThreshold 25000
+12649,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2239.24,0,
+12711,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26188.38,0,balance 26188.38 at or above dropThreshold 25000
+12714,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25246.99,0,balance 25246.99 at or above dropThreshold 25000
+12747,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2254.5,0,
+12808,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26133.42,0,balance 26133.42 at or above dropThreshold 25000
+12814,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25192.37,0,balance 25192.37 at or above dropThreshold 25000
+12838,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2270.06,0,
+12904,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26079.13,0,balance 26079.13 at or above dropThreshold 25000
+12922,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25133.5,0,balance 25133.50 at or above dropThreshold 25000
+12947,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2284.7,0,
+13004,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26022.7,0,balance 26022.70 at or above dropThreshold 25000
+13015,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25082.92,0,balance 25082.92 at or above dropThreshold 25000
+13045,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2299.86,0,
+13095,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25971.46,0,balance 25971.46 at or above dropThreshold 25000
+13120,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25025.94,0,balance 25025.94 at or above dropThreshold 25000
+13142,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2315.03,0,
+13193,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25916.38,0,balance 25916.38 at or above dropThreshold 25000
+13221,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25349.62,0,
+13235,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2330.37,0,
+13302,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25855.27,0,balance 25855.27 at or above dropThreshold 25000
+13312,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25321.63,0,balance 25321.63 at or above dropThreshold 25000
+13338,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2345.18,0,
+13396,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25802.68,0,balance 25802.68 at or above dropThreshold 25000
+13414,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25265.75,0,balance 25265.75 at or above dropThreshold 25000
+13432,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2360.41,0,
+13497,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25746.29,0,balance 25746.29 at or above dropThreshold 25000
+13524,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25205.62,0,balance 25205.62 at or above dropThreshold 25000
+13531,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2375.35,0,
+13590,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25694.48,0,balance 25694.48 at or above dropThreshold 25000
+13629,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2390.31,0,
+13632,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25146.72,0,balance 25146.72 at or above dropThreshold 25000
+13683,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25642.77,0,balance 25642.77 at or above dropThreshold 25000
+13723,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25097.2,0,balance 25097.20 at or above dropThreshold 25000
+13726,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2405.3,0,
+13793,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25581.74,0,balance 25581.74 at or above dropThreshold 25000
+13814,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25047.78,0,balance 25047.78 at or above dropThreshold 25000
+13817,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2420.56,0,
+13886,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25530.26,0,balance 25530.26 at or above dropThreshold 25000
+13907,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25375.73,0,
+13909,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2435.74,0,
+13991,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25472.26,0,balance 25472.26 at or above dropThreshold 25000
+14001,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2450.89,0,
+14008,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25342.22,0,balance 25342.22 at or above dropThreshold 25000
+14088,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25418.8,0,balance 25418.80 at or above dropThreshold 25000
+14097,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2465.8,0,
+14115,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25283.55,0,balance 25283.55 at or above dropThreshold 25000
+14187,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2481.0,0,
+14195,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25359.95,0,balance 25359.95 at or above dropThreshold 25000
+14213,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25229.94,0,balance 25229.94 at or above dropThreshold 25000
+14279,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2496.06,0,
+14301,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25301.79,0,balance 25301.79 at or above dropThreshold 25000
+14312,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25175.89,0,balance 25175.89 at or above dropThreshold 25000
+14376,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2510.82,0,
+14400,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25247.59,0,balance 25247.59 at or above dropThreshold 25000
+14419,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25117.61,0,balance 25117.61 at or above dropThreshold 25000
+14483,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2525.01,0,
+14494,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25196.24,0,balance 25196.24 at or above dropThreshold 25000
+14513,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25066.52,0,balance 25066.52 at or above dropThreshold 25000
+14586,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2539.38,0,
+14587,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25145.53,0,balance 25145.53 at or above dropThreshold 25000
+14607,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25015.53,0,balance 25015.53 at or above dropThreshold 25000
+14694,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2553.45,0,
+14695,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25086.77,0,balance 25086.77 at or above dropThreshold 25000
+14712,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25337.09,0,
+14793,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25033.58,0,balance 25033.58 at or above dropThreshold 25000
+14803,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2567.43,0,
+14804,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25308.56,0,balance 25308.56 at or above dropThreshold 25000
+14893,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,27844.51,0,
+14896,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25258.18,0,balance 25258.18 at or above dropThreshold 25000
+14904,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2581.82,0,
+14988,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25207.89,0,balance 25207.89 at or above dropThreshold 25000
+14995,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,30783.06,0,
+15003,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2596.28,0,
+15088,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25153.35,0,balance 25153.35 at or above dropThreshold 25000
+15103,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,33711.13,0,
+15107,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2610.44,0,
+15182,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25102.19,0,balance 25102.19 at or above dropThreshold 25000
+15197,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27811.96,0,balance 27811.96 at or above dropThreshold 25000
+15203,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2625.02,0,
+15289,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25044.08,0,balance 25044.08 at or above dropThreshold 25000
+15295,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30749.73,0,balance 30749.73 at or above dropThreshold 25000
+15312,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2638.83,0,
+15390,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33684.12,0,balance 33684.12 at or above dropThreshold 25000
+15396,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25364.46,0,
+15409,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2653.29,0,
+15485,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33614.88,0,balance 33614.88 at or above dropThreshold 25000
+15504,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25327.13,0,balance 25327.13 at or above dropThreshold 25000
+15514,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2667.26,0,
+15581,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33545.05,0,balance 33545.05 at or above dropThreshold 25000
+15604,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25272.32,0,balance 25272.32 at or above dropThreshold 25000
+15612,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2681.61,0,
+15673,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33478.27,0,balance 33478.27 at or above dropThreshold 25000
+15708,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25215.46,0,balance 25215.46 at or above dropThreshold 25000
+15714,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2695.69,0,
+15771,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33407.28,0,balance 33407.28 at or above dropThreshold 25000
+15815,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25157.08,0,balance 25157.08 at or above dropThreshold 25000
+15816,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2709.74,0,
+15879,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33329.22,0,balance 33329.22 at or above dropThreshold 25000
+15916,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25102.1,0,balance 25102.10 at or above dropThreshold 25000
+15919,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2723.7,0,
+15975,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33259.98,0,balance 33259.98 at or above dropThreshold 25000
+16014,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2738.1,0,
+16023,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25043.99,0,balance 25043.99 at or above dropThreshold 25000
+16077,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33186.58,0,balance 33186.58 at or above dropThreshold 25000
+16112,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2752.3,0,
+16117,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25371.41,0,
+16183,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33110.47,0,balance 33110.47 at or above dropThreshold 25000
+16206,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2766.7,0,
+16213,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25340.65,0,balance 25340.65 at or above dropThreshold 25000
+16293,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33031.67,0,balance 33031.67 at or above dropThreshold 25000
+16305,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2780.77,0,
+16323,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25280.34,0,balance 25280.34 at or above dropThreshold 25000
+16396,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32958.06,0,balance 32958.06 at or above dropThreshold 25000
+16413,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2794.27,0,
+16421,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25226.74,0,balance 25226.74 at or above dropThreshold 25000
+16500,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32883.89,0,balance 32883.89 at or above dropThreshold 25000
+16520,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2807.8,0,
+16530,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25167.24,0,balance 25167.24 at or above dropThreshold 25000
+16601,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32812.03,0,balance 32812.03 at or above dropThreshold 25000
+16623,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2821.55,0,
+16629,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25113.33,0,balance 25113.33 at or above dropThreshold 25000
+16700,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32741.74,0,balance 32741.74 at or above dropThreshold 25000
+16723,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25062.25,0,balance 25062.25 at or above dropThreshold 25000
+16732,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2834.89,0,
+16805,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32667.36,0,balance 32667.36 at or above dropThreshold 25000
+16828,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25005.31,0,balance 25005.31 at or above dropThreshold 25000
+16829,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2848.94,0,
+16912,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32591.73,0,balance 32591.73 at or above dropThreshold 25000
+16926,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25330.68,0,
+16938,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2862.22,0,
+17014,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32519.81,0,balance 32519.81 at or above dropThreshold 25000
+17030,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25295.59,0,balance 25295.59 at or above dropThreshold 25000
+17046,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2875.54,0,
+17123,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32443.12,0,balance 32443.12 at or above dropThreshold 25000
+17132,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25239.76,0,balance 25239.76 at or above dropThreshold 25000
+17137,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2889.87,0,
+17218,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32376.42,0,balance 32376.42 at or above dropThreshold 25000
+17241,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25180.24,0,balance 25180.24 at or above dropThreshold 25000
+17245,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2903.12,0,
+17324,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32302.17,0,balance 32302.17 at or above dropThreshold 25000
+17339,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2917.22,0,
+17345,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25123.58,0,balance 25123.58 at or above dropThreshold 25000
+17422,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32233.67,0,balance 32233.67 at or above dropThreshold 25000
+17431,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2931.41,0,
+17444,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25069.76,0,balance 25069.76 at or above dropThreshold 25000
+17529,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32159.05,0,balance 32159.05 at or above dropThreshold 25000
+17530,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2945.13,0,
+17553,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25010.64,0,balance 25010.64 at or above dropThreshold 25000
+17629,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32089.47,0,balance 32089.47 at or above dropThreshold 25000
+17639,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2958.18,0,
+17656,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25333.29,0,
+17723,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,32024.2,0,balance 32024.20 at or above dropThreshold 25000
+17732,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2972.23,0,
+17747,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25305.32,0,balance 25305.32 at or above dropThreshold 25000
+17828,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2986.06,0,
+17831,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31949.37,0,balance 31949.37 at or above dropThreshold 25000
+17841,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25253.85,0,balance 25253.85 at or above dropThreshold 25000
+17927,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,2999.66,0,
+17939,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31874.71,0,balance 31874.71 at or above dropThreshold 25000
+17942,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25198.66,0,balance 25198.66 at or above dropThreshold 25000
+18030,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31811.95,0,balance 31811.95 at or above dropThreshold 25000
+18033,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3012.78,0,
+18043,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25143.59,0,balance 25143.59 at or above dropThreshold 25000
+18131,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3026.39,0,
+18137,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31738.3,0,balance 31738.30 at or above dropThreshold 25000
+18142,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25089.73,0,balance 25089.73 at or above dropThreshold 25000
+18222,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3040.43,0,
+18244,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31664.83,0,balance 31664.83 at or above dropThreshold 25000
+18249,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25031.65,0,balance 25031.65 at or above dropThreshold 25000
+18324,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3053.72,0,
+18351,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31591.52,0,balance 31591.52 at or above dropThreshold 25000
+18351,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25354.77,0,
+18426,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3066.98,0,
+18442,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31529.31,0,balance 31529.31 at or above dropThreshold 25000
+18450,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25322.39,0,balance 25322.39 at or above dropThreshold 25000
+18518,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3080.88,0,
+18546,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31458.36,0,balance 31458.36 at or above dropThreshold 25000
+18547,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25269.24,0,balance 25269.24 at or above dropThreshold 25000
+18610,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3094.74,0,
+18647,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31389.62,0,balance 31389.62 at or above dropThreshold 25000
+18653,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25211.29,0,balance 25211.29 at or above dropThreshold 25000
+18705,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3108.38,0,
+18757,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31314.91,0,balance 31314.91 at or above dropThreshold 25000
+18762,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25151.83,0,balance 25151.83 at or above dropThreshold 25000
+18811,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3121.25,0,
+18851,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31251.22,0,balance 31251.22 at or above dropThreshold 25000
+18866,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25095.24,0,balance 25095.24 at or above dropThreshold 25000
+18914,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3134.3,0,
+18960,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31177.52,0,balance 31177.52 at or above dropThreshold 25000
+18974,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25036.6,0,balance 25036.60 at or above dropThreshold 25000
+19020,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3147.11,0,
+19055,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31113.43,0,balance 31113.43 at or above dropThreshold 25000
+19073,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25361.33,0,
+19124,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3160.03,0,
+19147,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,31051.49,0,balance 31051.49 at or above dropThreshold 25000
+19180,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25324.55,0,balance 25324.55 at or above dropThreshold 25000
+19219,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3173.53,0,
+19245,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30985.64,0,balance 30985.64 at or above dropThreshold 25000
+19279,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25270.3,0,balance 25270.30 at or above dropThreshold 25000
+19320,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3186.6,0,
+19351,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30914.58,0,balance 30914.58 at or above dropThreshold 25000
+19374,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25218.36,0,balance 25218.36 at or above dropThreshold 25000
+19412,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3200.25,0,
+19444,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30852.37,0,balance 30852.37 at or above dropThreshold 25000
+19466,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25168.15,0,balance 25168.15 at or above dropThreshold 25000
+19512,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3213.33,0,
+19541,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30787.61,0,balance 30787.61 at or above dropThreshold 25000
+19569,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25112.06,0,balance 25112.06 at or above dropThreshold 25000
+19619,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3225.89,0,
+19650,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30715.0,0,balance 30715.00 at or above dropThreshold 25000
+19677,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25053.38,0,balance 25053.38 at or above dropThreshold 25000
+19716,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3239.12,0,
+19748,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30649.87,0,balance 30649.87 at or above dropThreshold 25000
+19779,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25376.44,0,
+19815,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3252.18,0,
+19848,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30583.55,0,balance 30583.55 at or above dropThreshold 25000
+19880,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25342.93,0,balance 25342.93 at or above dropThreshold 25000
+19911,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3265.42,0,
+19950,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30516.06,0,balance 30516.06 at or above dropThreshold 25000
+19971,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25293.03,0,balance 25293.03 at or above dropThreshold 25000
+20016,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3278.01,0,
+20058,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30444.75,0,balance 30444.75 at or above dropThreshold 25000
+20081,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25232.83,0,balance 25232.83 at or above dropThreshold 25000
+20118,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3290.77,0,
+20154,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30381.51,0,balance 30381.51 at or above dropThreshold 25000
+20173,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25182.6,0,balance 25182.60 at or above dropThreshold 25000
+20217,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3303.72,0,
+20263,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30309.86,0,balance 30309.86 at or above dropThreshold 25000
+20266,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25131.92,0,balance 25131.92 at or above dropThreshold 25000
+20323,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3316.14,0,
+20360,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30246.25,0,balance 30246.25 at or above dropThreshold 25000
+20360,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25080.8,0,balance 25080.80 at or above dropThreshold 25000
+20422,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3329.04,0,
+20451,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25031.41,0,balance 25031.41 at or above dropThreshold 25000
+20458,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30182.11,0,balance 30182.11 at or above dropThreshold 25000
+20527,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3341.48,0,
+20551,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25355.62,0,
+20557,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30117.45,0,balance 30117.45 at or above dropThreshold 25000
+20618,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3354.9,0,
+20654,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25321.04,0,balance 25321.04 at or above dropThreshold 25000
+20658,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30051.64,0,balance 30051.64 at or above dropThreshold 25000
+20721,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3367.42,0,
+20750,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25268.44,0,balance 25268.44 at or above dropThreshold 25000
+20765,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29982.07,0,balance 29982.07 at or above dropThreshold 25000
+20830,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3379.48,0,
+20857,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25209.95,0,balance 25209.95 at or above dropThreshold 25000
+20862,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29919.14,0,balance 29919.14 at or above dropThreshold 25000
+20925,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3392.53,0,
+20948,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25160.3,0,balance 25160.30 at or above dropThreshold 25000
+20959,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29856.34,0,balance 29856.34 at or above dropThreshold 25000
+21022,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3405.41,0,
+21045,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25107.49,0,balance 25107.49 at or above dropThreshold 25000
+21051,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29796.9,0,balance 29796.90 at or above dropThreshold 25000
+21120,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3418.19,0,
+21138,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25056.97,0,balance 25056.97 at or above dropThreshold 25000
+21143,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29737.58,0,balance 29737.58 at or above dropThreshold 25000
+21214,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3431.24,0,
+21232,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25006.0,0,balance 25006.00 at or above dropThreshold 25000
+21248,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29670.02,0,balance 29670.02 at or above dropThreshold 25000
+21304,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3444.56,0,
+21338,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25327.04,0,
+21339,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29611.6,0,balance 29611.60 at or above dropThreshold 25000
+21395,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3457.77,0,
+21433,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29551.37,0,balance 29551.37 at or above dropThreshold 25000
+21446,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25289.77,0,balance 25289.77 at or above dropThreshold 25000
+21490,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3470.66,0,
+21541,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29482.32,0,balance 29482.32 at or above dropThreshold 25000
+21549,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25233.41,0,balance 25233.41 at or above dropThreshold 25000
+21580,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3483.91,0,
+21642,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29417.89,0,balance 29417.89 at or above dropThreshold 25000
+21656,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25174.99,0,balance 25174.99 at or above dropThreshold 25000
+21682,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3496.22,0,
+21751,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29348.51,0,balance 29348.51 at or above dropThreshold 25000
+21763,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25116.71,0,balance 25116.71 at or above dropThreshold 25000
+21788,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3508.2,0,
+21854,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29283.11,0,balance 29283.11 at or above dropThreshold 25000
+21862,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25062.91,0,balance 25062.91 at or above dropThreshold 25000
+21893,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3520.23,0,
+21963,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29214.05,0,balance 29214.05 at or above dropThreshold 25000
+21968,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25005.43,0,balance 25005.43 at or above dropThreshold 25000
+21991,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3532.76,0,
+22065,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29149.58,0,balance 29149.58 at or above dropThreshold 25000
+22073,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25327.01,0,
+22099,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3544.51,0,
+22171,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25295.21,0,balance 25295.21 at or above dropThreshold 25000
+22175,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29080.2,0,balance 29080.20 at or above dropThreshold 25000
+22199,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3556.84,0,
+22261,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25245.95,0,balance 25245.95 at or above dropThreshold 25000
+22272,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,29019.17,0,balance 29019.17 at or above dropThreshold 25000
+22299,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3569.14,0,
+22364,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25189.69,0,balance 25189.69 at or above dropThreshold 25000
+22375,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28954.5,0,balance 28954.50 at or above dropThreshold 25000
+22392,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3581.96,0,
+22469,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28895.6,0,balance 28895.60 at or above dropThreshold 25000
+22469,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25132.46,0,balance 25132.46 at or above dropThreshold 25000
+22490,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3594.37,0,
+22562,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28837.45,0,balance 28837.45 at or above dropThreshold 25000
+22569,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25078.08,0,balance 25078.08 at or above dropThreshold 25000
+22599,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3605.89,0,
+22659,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28776.92,0,balance 28776.92 at or above dropThreshold 25000
+22666,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25025.44,0,balance 25025.44 at or above dropThreshold 25000
+22693,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3618.55,0,
+22767,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28709.68,0,balance 28709.68 at or above dropThreshold 25000
+22775,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25344.81,0,
+22788,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3631.12,0,
+22872,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28644.46,0,balance 28644.46 at or above dropThreshold 25000
+22885,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25306.4,0,balance 25306.40 at or above dropThreshold 25000
+22895,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3642.71,0,
+22964,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28587.43,0,balance 28587.43 at or above dropThreshold 25000
+22977,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25256.02,0,balance 25256.02 at or above dropThreshold 25000
+23005,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3654.04,0,
+23056,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28530.52,0,balance 28530.52 at or above dropThreshold 25000
+23083,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25198.1,0,balance 25198.10 at or above dropThreshold 25000
+23097,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3666.77,0,
+23154,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28470.02,0,balance 28470.02 at or above dropThreshold 25000
+23190,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25139.77,0,balance 25139.77 at or above dropThreshold 25000
+23198,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3678.75,0,
+23263,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28402.88,0,balance 28402.88 at or above dropThreshold 25000
+23296,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3690.95,0,
+23296,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25082.11,0,balance 25082.11 at or above dropThreshold 25000
+23369,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28337.74,0,balance 28337.74 at or above dropThreshold 25000
+23397,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3702.89,0,
+23399,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25026.21,0,balance 25026.21 at or above dropThreshold 25000
+23469,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28276.43,0,balance 28276.43 at or above dropThreshold 25000
+23492,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25354.22,0,
+23501,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3714.55,0,
+23576,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28210.97,0,balance 28210.97 at or above dropThreshold 25000
+23601,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3726.52,0,
+23601,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25316.35,0,balance 25316.35 at or above dropThreshold 25000
+23683,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28145.66,0,balance 28145.66 at or above dropThreshold 25000
+23701,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25261.58,0,balance 25261.58 at or above dropThreshold 25000
+23711,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3737.65,0,
+23781,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28085.97,0,balance 28085.97 at or above dropThreshold 25000
+23794,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25210.74,0,balance 25210.74 at or above dropThreshold 25000
+23809,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3749.72,0,
+23882,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,28024.6,0,balance 28024.60 at or above dropThreshold 25000
+23897,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25154.55,0,balance 25154.55 at or above dropThreshold 25000
+23914,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3761.2,0,
+23988,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27960.32,0,balance 27960.32 at or above dropThreshold 25000
+23998,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25099.58,0,balance 25099.58 at or above dropThreshold 25000
+24019,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3772.66,0,
+24089,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27899.22,0,balance 27899.22 at or above dropThreshold 25000
+24108,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25039.85,0,balance 25039.85 at or above dropThreshold 25000
+24126,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3783.92,0,
+24190,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27838.25,0,balance 27838.25 at or above dropThreshold 25000
+24206,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25365.11,0,
+24226,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3795.74,0,
+24284,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27781.63,0,balance 27781.63 at or above dropThreshold 25000
+24313,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25328.33,0,balance 25328.33 at or above dropThreshold 25000
+24329,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3807.28,0,
+24381,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27723.32,0,balance 27723.32 at or above dropThreshold 25000
+24420,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25269.69,0,balance 25269.69 at or above dropThreshold 25000
+24431,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3818.88,0,
+24491,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27657.34,0,balance 27657.34 at or above dropThreshold 25000
+24513,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25218.84,0,balance 25218.84 at or above dropThreshold 25000
+24529,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3830.78,0,
+24586,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27600.48,0,balance 27600.48 at or above dropThreshold 25000
+24620,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25160.46,0,balance 25160.46 at or above dropThreshold 25000
+24633,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3842.16,0,
+24693,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27536.59,0,balance 27536.59 at or above dropThreshold 25000
+24715,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25108.73,0,balance 25108.73 at or above dropThreshold 25000
+24741,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3853.18,0,
+24795,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27475.82,0,balance 27475.82 at or above dropThreshold 25000
+24815,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25054.41,0,balance 25054.41 at or above dropThreshold 25000
+24835,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3865.34,0,
+24886,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27421.71,0,balance 27421.71 at or above dropThreshold 25000
+24911,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25002.36,0,balance 25002.36 at or above dropThreshold 25000
+24944,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3876.23,0,
+24993,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27358.23,0,balance 27358.23 at or above dropThreshold 25000
+25005,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25329.89,0,
+25040,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3888.18,0,
+25095,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25302.48,0,balance 25302.48 at or above dropThreshold 25000
+25098,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27296.08,0,balance 27296.08 at or above dropThreshold 25000
+25131,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3900.52,0,
+25188,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25251.56,0,balance 25251.56 at or above dropThreshold 25000
+25193,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27239.97,0,balance 27239.97 at or above dropThreshold 25000
+25232,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3911.99,0,
+25288,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27183.97,0,balance 27183.97 at or above dropThreshold 25000
+25294,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25193.64,0,balance 25193.64 at or above dropThreshold 25000
+25338,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3923.02,0,
+25382,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27128.68,0,balance 27128.68 at or above dropThreshold 25000
+25393,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25139.68,0,balance 25139.68 at or above dropThreshold 25000
+25437,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3934.62,0,
+25474,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27074.67,0,balance 27074.67 at or above dropThreshold 25000
+25500,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25081.48,0,balance 25081.48 at or above dropThreshold 25000
+25542,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3945.68,0,
+25564,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27021.94,0,balance 27021.94 at or above dropThreshold 25000
+25601,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25026.67,0,balance 25026.67 at or above dropThreshold 25000
+25646,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3956.8,0,
+25667,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26961.72,0,balance 26961.72 at or above dropThreshold 25000
+25708,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25347.1,0,
+25743,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3968.5,0,
+25763,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26905.71,0,balance 26905.71 at or above dropThreshold 25000
+25804,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25316.38,0,balance 25316.38 at or above dropThreshold 25000
+25843,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3979.91,0,
+25865,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26846.33,0,balance 26846.33 at or above dropThreshold 25000
+25903,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25262.15,0,balance 25262.15 at or above dropThreshold 25000
+25950,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,3990.7,0,
+25962,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26789.98,0,balance 26789.98 at or above dropThreshold 25000
+26009,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25204.21,0,balance 25204.21 at or above dropThreshold 25000
+26050,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4002.06,0,
+26056,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26735.49,0,balance 26735.49 at or above dropThreshold 25000
+26109,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25149.67,0,balance 25149.67 at or above dropThreshold 25000
+26148,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4013.58,0,
+26156,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26677.64,0,balance 26677.64 at or above dropThreshold 25000
+26199,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25100.69,0,balance 25100.69 at or above dropThreshold 25000
+26240,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4025.58,0,
+26258,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26618.76,0,balance 26618.76 at or above dropThreshold 25000
+26297,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25047.47,0,balance 25047.47 at or above dropThreshold 25000
+26331,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4037.66,0,
+26366,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26556.57,0,balance 26556.57 at or above dropThreshold 25000
+26393,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25373.79,0,
+26439,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4048.22,0,
+26459,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26503.12,0,balance 26503.12 at or above dropThreshold 25000
+26491,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25341.93,0,balance 25341.93 at or above dropThreshold 25000
+26538,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4059.55,0,
+26567,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26441.19,0,balance 26441.19 at or above dropThreshold 25000
+26601,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25281.62,0,balance 25281.62 at or above dropThreshold 25000
+26638,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4070.77,0,
+26662,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26386.84,0,balance 26386.84 at or above dropThreshold 25000
+26708,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25223.09,0,balance 25223.09 at or above dropThreshold 25000
+26748,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4081.08,0,
+26755,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26333.74,0,balance 26333.74 at or above dropThreshold 25000
+26816,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25164.16,0,balance 25164.16 at or above dropThreshold 25000
+26848,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4092.25,0,
+26854,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26277.33,0,balance 26277.33 at or above dropThreshold 25000
+26907,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25114.6,0,balance 25114.60 at or above dropThreshold 25000
+26948,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26223.88,0,balance 26223.88 at or above dropThreshold 25000
+26956,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4102.69,0,
+27008,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25059.72,0,balance 25059.72 at or above dropThreshold 25000
+27057,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26162.04,0,balance 26162.04 at or above dropThreshold 25000
+27060,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4113.46,0,
+27104,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25007.66,0,balance 25007.66 at or above dropThreshold 25000
+27155,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4125.0,0,
+27163,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26102.04,0,balance 26102.04 at or above dropThreshold 25000
+27199,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25334.64,0,
+27251,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4136.43,0,
+27266,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,26043.87,0,balance 26043.87 at or above dropThreshold 25000
+27305,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25298.45,0,balance 25298.45 at or above dropThreshold 25000
+27357,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25992.58,0,balance 25992.58 at or above dropThreshold 25000
+27361,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4146.59,0,
+27406,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25243.16,0,balance 25243.16 at or above dropThreshold 25000
+27451,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25939.71,0,balance 25939.71 at or above dropThreshold 25000
+27455,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4158.15,0,
+27498,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25192.91,0,balance 25192.91 at or above dropThreshold 25000
+27542,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25888.63,0,balance 25888.63 at or above dropThreshold 25000
+27561,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4168.62,0,
+27591,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25142.21,0,balance 25142.21 at or above dropThreshold 25000
+27642,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25832.61,0,balance 25832.61 at or above dropThreshold 25000
+27653,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4180.32,0,
+27684,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25091.61,0,balance 25091.61 at or above dropThreshold 25000
+27738,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25778.95,0,balance 25778.95 at or above dropThreshold 25000
+27749,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4191.63,0,
+27774,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25042.74,0,balance 25042.74 at or above dropThreshold 25000
+27833,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25725.96,0,balance 25725.96 at or above dropThreshold 25000
+27842,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4203.2,0,
+27881,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25363.13,0,
+27938,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4214.47,0,
+27940,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25666.4,0,balance 25666.40 at or above dropThreshold 25000
+27983,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25329.09,0,balance 25329.09 at or above dropThreshold 25000
+28034,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4225.71,0,
+28035,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25613.64,0,balance 25613.64 at or above dropThreshold 25000
+28073,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25279.76,0,balance 25279.76 at or above dropThreshold 25000
+28124,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4237.48,0,
+28137,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25557.11,0,balance 25557.11 at or above dropThreshold 25000
+28170,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25226.7,0,balance 25226.70 at or above dropThreshold 25000
+28218,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4248.86,0,
+28245,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25497.4,0,balance 25497.40 at or above dropThreshold 25000
+28269,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25172.66,0,balance 25172.66 at or above dropThreshold 25000
+28323,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4259.21,0,
+28343,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25443.33,0,balance 25443.33 at or above dropThreshold 25000
+28366,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25119.83,0,balance 25119.83 at or above dropThreshold 25000
+28430,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4269.35,0,
+28448,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25385.53,0,balance 25385.53 at or above dropThreshold 25000
+28473,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25061.67,0,balance 25061.67 at or above dropThreshold 25000
+28529,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4280.2,0,
+28551,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25328.95,0,balance 25328.95 at or above dropThreshold 25000
+28567,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25010.7,0,balance 25010.70 at or above dropThreshold 25000
+28622,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4291.59,0,
+28644,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25277.98,0,balance 25277.98 at or above dropThreshold 25000
+28663,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25337.13,0,
+28725,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4302.03,0,
+28752,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25218.91,0,balance 25218.91 at or above dropThreshold 25000
+28754,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25309.15,0,balance 25309.15 at or above dropThreshold 25000
+28819,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4313.28,0,
+28851,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25164.89,0,balance 25164.89 at or above dropThreshold 25000
+28854,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25254.39,0,balance 25254.39 at or above dropThreshold 25000
+28927,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4323.2,0,
+28955,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25108.27,0,balance 25108.27 at or above dropThreshold 25000
+28964,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25194.29,0,balance 25194.29 at or above dropThreshold 25000
+29034,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4333.19,0,
+29060,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25141.95,0,balance 25141.95 at or above dropThreshold 25000
+29063,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25049.6,0,balance 25049.60 at or above dropThreshold 25000
+29129,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4344.28,0,
+29154,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,25000.27,0,balance 25000.27 at or above dropThreshold 25000
+29163,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25085.92,0,balance 25085.92 at or above dropThreshold 25000
+29229,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4354.88,0,
+29245,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,27816.29,0,
+29272,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25026.76,0,balance 25026.76 at or above dropThreshold 25000
+29338,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4364.61,0,
+29342,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,30757.9,0,
+29372,c-medium,203.0.113.52,http,account_lines,512,served,C00_served,40,25350.98,0,
+29435,c-heavy,203.0.113.51,http,ledger,512,served,C00_served,250,33696.01,0,
+29437,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4375.26,0,
+29475,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25316.41,0,balance 25316.41 at or above dropThreshold 25000
+29531,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4386.36,0,
+29542,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,27787.98,0,balance 27787.98 at or above dropThreshold 25000
+29576,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25261.09,0,balance 25261.09 at or above dropThreshold 25000
+29625,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4397.44,0,
+29632,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,30731.27,0,balance 30731.27 at or above dropThreshold 25000
+29668,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25210.8,0,balance 25210.80 at or above dropThreshold 25000
+29730,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33663.18,0,balance 33663.18 at or above dropThreshold 25000
+29733,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4407.17,0,
+29771,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25154.61,0,balance 25154.61 at or above dropThreshold 25000
+29823,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4418.58,0,
+29839,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33583.79,0,balance 33583.79 at or above dropThreshold 25000
+29879,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25095.84,0,balance 25095.84 at or above dropThreshold 25000
+29932,c-light,203.0.113.53,http,server_info,512,served,C00_served,5,4428.16,0,
+29942,c-heavy,203.0.113.51,http,ledger,512,rejected_overloaded_503,C04_resource_balance,0,33508.95,0,balance 33508.95 at or above dropThreshold 25000
+29971,c-medium,203.0.113.52,http,account_lines,512,rejected_overloaded_503,C04_resource_balance,0,25045.88,0,balance 25045.88 at or above dropThreshold 25000
