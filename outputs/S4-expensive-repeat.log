@@ -1,0 +1,29 @@
+scenario: S4-expensive-repeat
+title: Repeated expensive queries: heavy (ledger JSON, charge 3000), medium (account_lines, charge 400) and light (server_info, charge 20) at 10 per second from three separate public IPs
+pinned_commit: 0085a1ff885d6a446369cf73a4430f75af22be55
+scenario_file: scenarios/S4-expensive-repeat.json
+scenario_sha256: f2189c418cb300b6c564728690849f4b148d6bc43be68620c58477947d05fd7b
+simulator_file: scripts/simulator.py
+simulator_sha256: 72a6c695752b7128fce0ffb4069c47861167315323a45980fb09a337338aeb8a
+harness_file: scripts/load_harness.py
+harness_sha256: d59e87bdaed792c386870d22814f738e4f8fd057615cd9fe8feb8a64191a10f1
+duration_ms: 30000
+total_requests: 901
+served: 407
+rejected: 494
+success_rate_pct: 45.1720
+throughput_served_per_s: 13.5667
+latency_ms: min=5 p50=5.0 p95=40.0 p99=250.0 max=250 mean=22.37
+outcomes: {"rejected_overloaded_503": 494, "served": 407}
+controls: {"C00_served": 407, "C04_resource_balance": 494}
+first_rejection_ms: 1011
+first_drop_ms: 1011
+load_monitor: {"count": 407, "is_overloaded": false, "latency_avg_ms": 22.37, "latency_peak_ms": 250}
+per_client: {"c-heavy": {"rejected": 284, "served": 16}, "c-light": {"rejected": 0, "served": 301}, "c-medium": {"rejected": 210, "served": 90}}
+per_endpoint: {"203.0.113.51": {"charges_total": 48000, "disconnect_ms": 29942, "disconnect_reason": "rejected_overloaded_503", "disconnected": true, "final_balance": 33466.88, "rejected": 284, "served": 16}, "203.0.113.52": {"charges_total": 36000, "disconnect_ms": 29971, "disconnect_reason": "rejected_overloaded_503", "disconnected": true, "final_balance": 25030.15, "rejected": 210, "served": 90}, "203.0.113.53": {"charges_total": 6020, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 4422.12, "rejected": 0, "served": 301}}
+warnings: 2
+ws_events: 0
+csv_file: outputs/S4-expensive-repeat.csv
+csv_sha256: b61ad82b9b4c2cbe03f2c399c01f999f4fb312073dc45529f0193b0109e8c1b8
+json_file: outputs/S4-expensive-repeat.json
+json_sha256: 1f2ae78ba0b218c2783b31bbeece43aea06996e1706ece683c8d3f7f1a156906

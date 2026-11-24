@@ -1,0 +1,29 @@
+scenario: S3-oversized-payloads
+title: Oversized payloads: requests straddling the 1,000,000-byte maxRequestSize boundary on HTTP and WebSocket
+pinned_commit: 0085a1ff885d6a446369cf73a4430f75af22be55
+scenario_file: scenarios/S3-oversized-payloads.json
+scenario_sha256: 46c9ea3f74052a5e7b9fe19ded18a571a2b6dd8f6a845d9d61648c84ea65097f
+simulator_file: scripts/simulator.py
+simulator_sha256: 72a6c695752b7128fce0ffb4069c47861167315323a45980fb09a337338aeb8a
+harness_file: scripts/load_harness.py
+harness_sha256: d59e87bdaed792c386870d22814f738e4f8fd057615cd9fe8feb8a64191a10f1
+duration_ms: 5000
+total_requests: 9
+served: 4
+rejected: 5
+success_rate_pct: 44.4444
+throughput_served_per_s: 0.8000
+latency_ms: min=5 p50=5.0 p95=5.0 p99=5.0 max=5 mean=5.0
+outcomes: {"rejected_client_gone": 1, "rejected_oversize_400": 3, "rejected_oversize_jsonInvalid": 1, "served": 4}
+controls: {"C00_served": 4, "C01_port_limit": 1, "C02_max_request_size": 4}
+first_rejection_ms: 100
+first_drop_ms: None
+load_monitor: {"count": 4, "is_overloaded": false, "latency_avg_ms": 5.0, "latency_peak_ms": 5}
+per_client: {"c-http": {"rejected": 3, "served": 3}, "c-ws": {"rejected": 2, "served": 1}}
+per_endpoint: {"203.0.113.40": {"charges_total": 60, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 53.96, "rejected": 3, "served": 3}, "203.0.113.41": {"charges_total": 20, "disconnect_ms": null, "disconnect_reason": null, "disconnected": false, "final_balance": 17.95, "rejected": 1, "served": 1}}
+warnings: 0
+ws_events: 1
+csv_file: outputs/S3-oversized-payloads.csv
+csv_sha256: eac34d431988f17bebabf621a66957aad71b6211ba3a12623d9c2cb864a34b90
+json_file: outputs/S3-oversized-payloads.json
+json_sha256: 4ceca7aedc83fd3f398892cdf5dad75d993ad239d3ac3f027651d8d47c3717af

@@ -1,0 +1,82 @@
+{
+  "controls": {
+    "C00_served": 4,
+    "C01_port_limit": 1,
+    "C02_max_request_size": 4
+  },
+  "duration_ms": 5000,
+  "first_drop_ms": null,
+  "first_rejection_ms": 100,
+  "latency_ms": {
+    "count": 4,
+    "max": 5,
+    "mean": 5.0,
+    "min": 5,
+    "p50": 5.0,
+    "p95": 5.0,
+    "p99": 5.0
+  },
+  "load_monitor": {
+    "count": 4,
+    "is_overloaded": false,
+    "latency_avg_ms": 5.0,
+    "latency_peak_ms": 5
+  },
+  "outcomes": {
+    "rejected_client_gone": 1,
+    "rejected_oversize_400": 3,
+    "rejected_oversize_jsonInvalid": 1,
+    "served": 4
+  },
+  "per_client": {
+    "c-http": {
+      "rejected": 3,
+      "served": 3
+    },
+    "c-ws": {
+      "rejected": 2,
+      "served": 1
+    }
+  },
+  "per_endpoint": {
+    "203.0.113.40": {
+      "charges_total": 60,
+      "disconnect_ms": null,
+      "disconnect_reason": null,
+      "disconnected": false,
+      "final_balance": 53.96,
+      "rejected": 3,
+      "served": 3
+    },
+    "203.0.113.41": {
+      "charges_total": 20,
+      "disconnect_ms": null,
+      "disconnect_reason": null,
+      "disconnected": false,
+      "final_balance": 17.95,
+      "rejected": 1,
+      "served": 1
+    }
+  },
+  "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+  "rejected": 5,
+  "scenario": "S3-oversized-payloads",
+  "served": 4,
+  "simulated": true,
+  "success_rate_pct": 44.4444,
+  "throughput_served_per_s": 0.8,
+  "title": "Oversized payloads: requests straddling the 1,000,000-byte maxRequestSize boundary on HTTP and WebSocket",
+  "total_requests": 9,
+  "warnings": [],
+  "ws_events": [
+    {
+      "client": "c-ws",
+      "detail": "oversize message",
+      "event": "ws_closed",
+      "ip": "203.0.113.41",
+      "limit": 100,
+      "queue_depth": 0,
+      "t_ms": 100
+    }
+  ]
+}

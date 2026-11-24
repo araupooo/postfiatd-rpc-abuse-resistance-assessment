@@ -1,0 +1,10 @@
+t_ms,client,ip,transport,method,payload_bytes,outcome,control,latency_ms,balance_after,queue_depth,detail
+0,c-http,203.0.113.40,http,server_info,512,served,C00_served,5,20.0,0,
+0,c-ws,203.0.113.41,ws,server_info,512,served,C00_served,5,20.0,0,
+100,c-http,203.0.113.40,http,server_info,999999,served,C00_served,5,39.96,0,
+100,c-ws,203.0.113.41,ws,server_info,1000001,rejected_oversize_jsonInvalid,C02_max_request_size,0,0,0,payload 1000001 bytes exceeds maxRequestSize 1000000
+200,c-http,203.0.113.40,http,server_info,1000000,served,C00_served,5,59.87,0,
+200,c-ws,203.0.113.41,ws,server_info,512,rejected_client_gone,C01_port_limit,0,0,0,client not connected
+300,c-http,203.0.113.40,http,server_info,1000001,rejected_oversize_400,C02_max_request_size,0,0,0,payload 1000001 bytes exceeds maxRequestSize 1000000
+400,c-http,203.0.113.40,http,server_info,2000000,rejected_oversize_400,C02_max_request_size,0,0,0,payload 2000000 bytes exceeds maxRequestSize 1000000
+500,c-http,203.0.113.40,http,server_info,5000000,rejected_oversize_400,C02_max_request_size,0,0,0,payload 5000000 bytes exceeds maxRequestSize 1000000
